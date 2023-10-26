@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <div class="sign_up_card">
+    <div class="sign_up">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <div><li><span>Product discovery and building what matters</span></li></div>
+        <li><span>Measuring to ensure updates are a success</span></li>
+        <li><span>And much more!</span></li>
+      </ul>
+      <form>
+        <label for="#email">Email address<span id="valid_email_required">Valid email required</span></label><br>
+        <input id="email" type="text" placeholder="email@company.com" /><br>
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="image">
+    </div>
+  </div>
+  <!-- Sign-up form end -->
+  <!-- Success message start -->
+  <div class="success_card">
+    <img id="success_image" src="assets/images/icon-success.svg" alt="success">
+    <h1>Thanks for<br>subscribing!</h1>
+    <p id="success_text">A confirmation email has been sent to <span id="user_email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button>Dismiss message</button>
+  </div>
+  <!-- Success message end -->
+  <script src="app.js"></script>
+</body>
+
+</html>
